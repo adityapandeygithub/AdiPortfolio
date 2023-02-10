@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pandey's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8045adf93f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="small" style="color: black;" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="small" style="color: black;" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB Developer</p>
+                <h1>Hi,I'm <span>Aditya</span>  <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------this is about section------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/mypic.jpeg">
+                </div>
+                <div class="col-2">
+                    <h2 class="sub-title">About Me</h1>
+                    <p>
+                        I am a student currently pursuing B.tech from Lovely Professional University.
+                        I am from Uttar Pradesh, Lucknow.
+                        I am having a keen interest in Full Stack Development.
+                        I am a hard working student who wanted to show his skills to all the world.
+                    </p>
+                    <div class="tabs">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>web application development</li>
+                            <li><span>Game Development</span><br>java game development</li>
+                            <li><span>Informatica</span><br>informatica developer</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>web application development</li>
+                            <li><span>Game Development</span><br>java game development</li>
+                            <li><span>Informatica</span><br>informatica developer</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Pursuing B.Tech from lpu</li>
+                            <li><span>2018-2020</span><br>Completed +2 from New Public College</li>
+                            <li><span>2018</span><br>10th passed out</li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------services section------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-file-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                   <!-- <i class="fa-solid fa-gamepad-modern"></i> -->
+                   <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Design</h2>
+                    <p>
+                        Game design is the process of creating and shaping the mechanics, systems, and rules of a game. Games can be created for entertainment, education, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL Design</h2>
+                    <p>
+                        A properly designed database provides you with access to up-to-date, accurate information. Because a correct design is essential to achieving your goals in working with a database, investing the time required to learn the principles of good design makes sense. In the end, you are much more likely to end up with a database that meets your needs and can easily accommodate change.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------My Work section -------------------->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="mobile.jpg">
+                    <div class="layer">
+                        <h3>Notes Keeper</h3>
+                        <p>In this app you can add notes for future reminder or incase you are having a habit of forgetting things.
+                        </p>
+                        <a href=" https://adityapandeygithub.github.io/NotesKeeper/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>     
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mobile.jpg">
+                    <div class="layer">
+                        <h3>Word Guessing Game</h3>
+                        <p>Simple Board Guessing Game made using React and Vanilla JS.
+                        </p>
+                        <a href="https://adityapandeygithub.github.io/WordGuessingGame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>     
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mobile.jpg">
+                    <div class="layer">
+                        <h3>API</h3>
+                        <p>This site is used to show the country flag, Continent, Population, Currency, Capital and Language related to the country which you will enter.
+                        </p>
+                        <a href="https://adityapandeygithub.github.io/frontenddevca3/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>     
+                    </div>
+                </div>
+                <a href="" class="switch">See More</a>
+            </div>
+        </div>
+    </div>    
+        <!------------------ contact section ------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>9555adityapandey@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-square-phone"></i>9555369939</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="" download class="switch btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your Email" required>
+                            <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="switch btn">Submit</button>
+                        </form>
+                        <span id="msg">Thank You</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Aditya<i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxDQADuKEkQRRed1ToOsgeDYi_-86q3QsfMKgLH2Cx7Tggu2WB-syPtdE9oXtNyzu6G/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
